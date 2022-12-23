@@ -1,0 +1,368 @@
+@media (max-width: 1000px) {
+  .menu-active {
+    animation: open 0.3s ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  .menu-close {
+    animation: close 0.3s ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes open {
+    0% {
+      transform: scaleX(0);
+      transform-origin: left;
+    }
+
+    100% {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+  }
+
+  @keyframes close {
+    0% {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+
+    100% {
+      transform: scaleX(0);
+      transform-origin: left;
+    }
+  }
+}
+
+.burger-active span:nth-child(2) {
+  display: none;
+}
+
+.burger-active span:nth-child(1) {
+  transform: rotate(45deg) translateY(15px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.burger-active span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-15px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.primary-btn {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.primary-btn:hover {
+  background-color: $primary-light;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.primary-btn:focus-visible {
+  background-color: $primary-light;
+  outline: 2px solid $primary-sec;
+  transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out;
+}
+
+.primary-btn:active {
+  background-color: $primary-sec;
+  outline: none;
+  transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out;
+}
+
+.primary-btn:disabled {
+  background-color: $grey_light;
+  color: $grey;
+  outline: none;
+  transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.secondary-btn {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.secondary-btn:hover {
+  background-color: $primary;
+  color: $default;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.secondary-btn:focus-visible {
+  background-color: $primary-light;
+  color: $default;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.footer__link,
+.header-link {
+  transition: color 0.3s ease-in-out;
+}
+
+.footer__link:hover,
+.header-link:hover {
+  color: $primary;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer__link:focus-visible,
+.header-link:focus-visible {
+  color: $primary-sec;
+  background-color: $primary-light;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.footer__link:active,
+.header-link:active {
+  color: $primary-sec;
+  background-color: none;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.nav-btn svg {
+  fill: none;
+}
+
+.nav-btn path,
+.nav-btn circle {
+  stroke: $primary;
+  transition: fill 0.3s ease-in-out, stroke 0.3s ease-in-out;
+}
+
+.nav-btn:disabled path,
+.nav-btn:disabled circle {
+  stroke: $grey;
+  fill: none;
+}
+
+.nav-btn:hover:not(:disabled) path {
+  stroke: $default;
+  transition: fill 0.3s ease-in-out, stroke 0.3s ease-in-out;
+}
+
+.nav-btn:hover:not(:disabled) circle {
+  fill: $primary;
+  transition: fill 0.3s ease-in-out, stroke 0.3s ease-in-out;
+}
+
+.nav-btn:focus-visible:not(:disabled) path {
+  stroke: $default;
+  transition: fill 0.3s ease-in-out, stroke 0.3s ease-in-out;
+}
+
+.nav-btn:focus-visible:not(:disabled) circle {
+  fill: $primary-light;
+  transition: fill 0.3s ease-in-out, stroke 0.3s ease-in-out;
+}
+
+.nav-btn:focus-visible:not(:disabled) path {
+  stroke: $default;
+  transition: fill 0.3s ease-in-out, stroke 0.3s ease-in-out;
+}
+
+.nav-btn:active:not(:disabled) circle {
+  fill: $primary-sec;
+  stroke: $primary-sec;
+  transition: fill 0.3s ease-in-out, stroke 0.3s ease-in-out;
+}
+
+.link-std:active .link-std__text {
+  transition: color 0.3s ease-in-out;
+}
+
+.link-std path,
+circle {
+  stroke: $primary;
+  fill: none;
+  transition: fill 0.3s ease-in-out, stroke 0.3s ease-in-out;
+}
+
+.link-std .link-std__text::after {
+  content: "";
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: $primary;
+  left: 0;
+  bottom: -2px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.link-std:hover .link-std__text::after,
+.link-std:focus-visible .link-std__text::after,
+.link-std:active .link-std__text::after {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.link-std:hover path,
+.link-std:focus-visible path {
+  stroke: $default;
+  transition: stroke 0.3s ease-in-out;
+}
+
+.link-std:hover circle {
+  fill: $primary;
+  transition: fill 0.3s ease-in-out, stroke 0.3s ease-in-out;
+}
+
+.link-std:focus-visible circle {
+  fill: $primary-light;
+  transition: fill 0.3s ease-in-out, stroke 0.3s ease-in-out;
+}
+
+.link-std:active .link-std__text {
+  color: $primary-sec;
+  transition: color 0.3s ease-in-out;
+}
+
+.link-std:active .link-std__text::after {
+  background-color: $primary-sec;
+  transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.link-std:active circle {
+  fill: $primary-sec;
+  stroke: $primary-sec;
+  transition: fill 0.3s ease-in-out, stroke 0.3s ease-in-out;
+}
+
+.link-stdk:active path {
+  stroke: $default;
+  transition: stroke 0.3s ease-in-out;
+}
+
+.footer__soc-link path {
+  fill: $grey;
+  transition: fill 0.3 ease-in-out;
+}
+
+.footer__soc-link:hover path {
+  fill: $primary;
+  transition: fill 0.3 ease-in-out;
+}
+
+.footer__soc-link:focus-visible {
+  background-color: $primary-light;
+  transition: background-color 0.3 ease-in-out;
+}
+
+.footer__soc-link:focus-visible path {
+  fill: $default;
+  transition: fill 0.3s ease-in-out;
+}
+
+.footer__soc-link:active path {
+  fill: $primary-sec;
+  transition: fill 0.3s ease-in-out;
+}
+
+.header__tel {
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.header__tel path {
+  fill: $secondary;
+  transition: fill 0.3s ease-in-out;
+}
+
+.header__tel:hover {
+  color: $secondary-light;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.header__tel:hover path {
+  fill: $secondary-light;
+  transition: fill 0.3s ease-in-out;
+}
+
+.header__tel:focus-visible {
+  background-color: $secondary-light-1;
+  color: $secondary;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.header__tel:focus-visible path {
+  fill: $secondary;
+  transition: fill 0.3s ease-in-out;
+}
+
+.header__tel:active {
+  background-color: initial;
+  color: $secondary-prime;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.header__tel:active path {
+  fill: $secondary-prime;
+  transition: fill 0.3s ease-in-out;
+}
+
+.header-user path {
+  fill: $primary;
+  transition: fill 0.3s ease-in-out;
+}
+
+.header-user:hover path {
+  fill: $primary-light;
+  transition: fill 0.3s ease-in-out;
+}
+
+.header-user:focus-visible {
+  background-color: $primary-light;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.header-user:focus-visible path {
+  fill: $default;
+  transition: fill 0.3s ease-in-out;
+}
+
+.header-user:active {
+  background-color: initial;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.header-user:active path {
+  fill: $primary-sec;
+  transition: fill 0.3s ease-in-out;
+}
+
+.std-input {
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.std-input:hover {
+  background-color: $grey_light;
+  border-color: $grey_light;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.std-input:focus-visible {
+  background-color: $default-light;
+  border-color: $primary;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.true-input,
+.true-input:focus-visible {
+  border-color: $secondary-green;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.error-input,
+.error-input:focus-visible {
+  border-color: $secondary-red;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.modal {
+  transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.modal--active {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}

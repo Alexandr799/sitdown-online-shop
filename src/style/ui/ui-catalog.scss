@@ -1,0 +1,30 @@
+.wrapper-filter__content {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+
+.wrapper-filter__title {
+    border-color: $grey_middle;
+    transition: border-color .3s ease-in-out;
+}
+
+.wrapper-filter--active {
+    z-index: 12;
+    .wrapper-filter__title {
+        border-color: $primary-sec;
+        transition: border-color .3s ease-in-out;
+        z-index: 11;
+    }
+
+    .wrapper-filter__content {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity .3s ease-in-out;
+    }
+
+    .wrapper-filter__title::before {
+        transform: rotate(180deg) translateY(3px);
+        transition: transform .3s ease-in-out;
+    }
+}

@@ -1,0 +1,166 @@
+@media (max-width:1400px) {
+    .container {
+        max-width: 952px;
+    }
+
+    .header {
+
+        &__container-1 {
+            padding-top: 76px;
+        }
+
+        &__tel {
+            margin: 0;
+            position: absolute;
+            top: 24px;
+            right: 0;
+        }
+    
+        &__selector-city-wrapper {
+            margin: 0;
+            position: absolute;
+            top: 18px;
+            left: 0;
+        }
+
+        &__logo {
+            margin-right: 61px;
+        }
+
+        &__nav-item:not(:last-child) {
+            margin-right: 42px;
+        }
+
+        &__container-2 {
+            padding: 35px 0;
+        }
+
+        &__cart-wrapper{
+            margin: 0;
+            position: absolute;
+            top: -134px;
+            right: 0;
+        }
+
+        &__lk-button {
+            margin: 0;
+            position: absolute;
+            top: -132px;
+            right: 72px;
+        }
+
+        &__input-search {
+            width: 654px;
+        }
+
+        &__line-1 {
+            position: relative;
+        }
+
+        &__line-1::before {
+            position: absolute;
+            content: "";
+            left: 0;
+            height:58px;
+            right: 0;
+            background-color: $default;
+        }
+    }
+
+    .main {
+
+        &__container {
+            grid-template-columns: repeat(16, 1fr);
+            grid-template-rows: minmax(210px, auto);
+            column-gap: 20px;
+            row-gap:10px;
+        }
+    
+        &__head {
+            grid-column: span 9;
+        }
+    
+        &__buy-info {
+            grid-column: span 7;
+            padding-top: 41px;
+        }
+    
+        &__slider-head {
+            grid-column: span 9;
+            padding: 0;
+        }
+
+        &__about {
+            grid-column: span 9;
+        }
+
+        &__character {
+            grid-column: span 7;
+        }
+    }
+
+    .character__value {
+        width: 54%;
+    }
+
+    .cart__swiper-slide {
+        width: 23%;
+    }
+
+    .dop {
+        padding-top: 40px;
+    }
+
+    .footer {
+        &__part-logo {
+            margin-right: 30px;
+        }
+
+        &__part-about {
+            margin-right: 78px;
+        }
+
+        &__part-service {
+            margin-right: 94px;
+        }
+
+        &__part-feedback {
+            margin-right: 108px;
+        }
+
+        &__logo {
+            margin-bottom: 28px;
+        }
+    }
+
+
+    .open-cart {
+        width: 952px;
+        padding: 50px 65px 20px 65px;
+    
+        &__head-img {
+            img {
+                height: 322px;
+                max-width: 821px;
+            }
+        }
+
+        &__close {
+            width: 12px;
+            height: 12px;
+        }
+    
+        &__prev {
+            position: absolute;
+            bottom: 80px;
+            right: auto;
+            left: 20px;
+        }
+    
+        &__next {
+            position: absolute;
+            bottom: 80px;
+            right: 20px;
+        }
+    }
+}

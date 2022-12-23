@@ -1,0 +1,95 @@
+@media (max-width:1400px) {
+    .container {
+        max-width: 952px;
+    }
+
+    .header {
+
+        &__container-1 {
+            padding-top: 76px;
+        }
+
+        &__tel {
+            margin: 0;
+            position: absolute;
+            top: 24px;
+            right: 0;
+        }
+    
+        &__selector-city-wrapper {
+            margin: 0;
+            position: absolute;
+            top: 18px;
+            left: 0;
+        }
+
+        &__logo {
+            margin-right: 61px;
+        }
+
+        &__nav-item:not(:last-child) {
+            margin-right: 42px;
+        }
+
+        &__container-2 {
+            padding: 35px 0;
+        }
+
+        &__cart-wrapper{
+            margin: 0;
+            position: absolute;
+            top: -134px;
+            right: 0;
+        }
+
+        &__lk-button {
+            margin: 0;
+            position: absolute;
+            top: -132px;
+            right: 72px;
+        }
+
+        &__input-search {
+            width: 654px;
+        }
+
+        &__line-1 {
+            position: relative;
+        }
+
+        &__line-1::before {
+            position: absolute;
+            content: "";
+            left: 0;
+            height:58px;
+            right: 0;
+            background-color: $default;
+        }
+    }
+
+    .main__content {
+        width: 88%;
+    }
+
+    .footer {
+        &__part-logo {
+            margin-right: 30px;
+        }
+
+        &__part-about {
+            margin-right: 78px;
+        }
+
+        &__part-service {
+            margin-right: 94px;
+        }
+
+        &__part-feedback {
+            margin-right: 108px;
+        }
+
+        &__logo {
+            margin-bottom: 28px;
+        }
+    }
+}

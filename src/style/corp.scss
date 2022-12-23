@@ -1,0 +1,347 @@
+@import "./default/normalize.scss";
+@import "./choices/choices.min.scss";
+@import "./choices/choices-custom-setting.scss";
+@import "./default/fonts.scss";
+@import "./default/var.scss";
+@import './default/def.scss';
+
+.header {
+    &__line-1 {
+        background-color: $grey_light;
+    }
+
+    &__burger {
+        display: none;
+    }
+
+    &__container-1 {
+        position: relative;
+        align-items: center;
+        padding: 12px 0;
+        flex-wrap: wrap;
+    }
+
+    &__selector-city-wrapper {
+        display: flex;
+        align-items: center;
+        margin-right: 33px;
+    }
+
+    &__name-selector {
+        margin-right: 4px;
+    }
+
+    &__tel {
+        display: flex;
+        align-items: center;
+        margin-right: 186px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        color: $secondary;
+    }
+
+    &__info-item {
+        color: $grey;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+    }
+
+    &__info-item:not(:last-child) {
+        margin-right: 64px;
+    }
+
+    &__info-list {
+        @include resetMarginPadding();
+        flex-wrap: wrap;
+    }
+
+    &__container-2 {
+        position: relative;
+        align-items: center;
+        padding: 32px 0;
+    }
+
+    &__nav-list {
+        @include resetMarginPadding();
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__nav-item:not(:last-child) {
+        margin-right: 92px;
+    }
+
+    &__logo {
+        @include resetMarginPadding();
+        margin-right: 141px;
+    }
+
+    &__container-3 {
+        position: relative;
+        padding-bottom: 32px;
+    }
+
+    &__input-search {
+        width: 761px;
+        padding: 18px 73px 18px 57px;
+        line-height: 120%;
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    &__search-wrapper::after {
+        content: "";
+        position: absolute;
+        background-image: url("../assets/images/search.svg");
+        left: 34px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 15px;
+        height: 15px;
+    }
+
+    &__input-button {
+        position: absolute;
+        right: 32px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__cart-wrapper,
+    &__lk-button {
+        align-self: center;
+    }
+
+    &__cart-wrapper {
+        padding: 3px 3px 3px 15px;
+    }
+
+    &__counter {
+        position: absolute;
+        background-color: $secondary;
+        border-radius: 50%;
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 100%;
+        color: $default;
+        padding: 2px 3px;
+        left: 1px;
+        top: 19%;
+    }
+
+    &__lk-button {
+        margin-right: 25px;
+    }
+}
+
+.main {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    position: relative;
+
+    &__map {
+        position: absolute;
+        top: -10px;
+        left: 0;
+    }
+
+    &__content {
+        width: 65%;
+    }
+
+    &__title {
+        @include resetMarginPadding();
+        font-weight: 400;
+        margin-bottom: 32px;
+        font-size: 32px;
+        line-height: 100%;
+        color: $black;
+    }
+
+    &__text {
+        @include resetMarginPadding();
+        margin-bottom: 33px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 180%;
+    }
+
+    &__subtitle {
+        @include resetMarginPadding();
+        margin-bottom: 12px;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 33px;
+        color: $black;
+    }
+
+    &__sub-subtitle {
+        @include resetMarginPadding();
+        margin-bottom: 12px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        color: $secondary;
+    }
+
+    &__benefits-list {
+        @include resetMarginPadding();
+        margin-bottom: 32px;
+        width: 74%;
+    }
+
+    .text-2 {
+        margin-bottom: 17px;
+    }
+
+    &__benefits-item {
+        @include resetMarginPadding();
+        padding-left: 37px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: $grey-shade;
+    }
+
+    &__benefits-item:not(:last-child) {
+        margin-bottom: 12px
+    }
+
+    &__garant-list {
+        @include resetMarginPadding();
+        margin-bottom: 32px;
+        padding-left:20px; 
+    }
+    
+    &__garant-item {
+        @include resetMarginPadding();
+        margin-bottom: 12px;
+        position: relative;
+        list-style: decimal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 180%;
+        color: $grey-shade;
+        &::marker {
+            font-weight: 600;
+            position: absolute;
+            left: 0;
+            top:0;
+            font-size: 16px;
+            line-height: 180%;
+            color: $secondary;
+        }
+    }
+
+    &__garant-item:last-child {
+        margin-bottom: 0;
+    }
+
+    &__bottom-text {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 150%;
+        color: $black;
+        padding-left: 109px;
+        min-height: 116px;
+        display: flex;
+        align-items: center;
+        background-image: url('../assets/images/pen.webp');
+        background-position:  left center;
+    } 
+}
+
+.footer {
+    background-color: $grey_light;
+
+    &__title {
+        margin-bottom: 9px;
+    }
+
+    &__container {
+        padding-top: 24px;
+        padding-bottom: 19px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__block-title {
+        @include resetMarginPadding();
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        color: $black;
+    }
+
+    &__link {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        color: $grey;
+    }
+
+    &__soc-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__soc-list {
+        @include resetMarginPadding();
+    }
+
+    &__soc-item:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    &__part-logo {
+        margin-right: 249px;
+    }
+
+    &__part-about {
+        margin-right: 112px;
+    }
+
+    &__part-service {
+        margin-right: 132px;
+    }
+
+    &__part-feedback {
+        margin-right: 146px;
+    }
+
+    &__block-title {
+        margin-bottom: 10px;
+    }
+
+    &__link:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    &__logo {
+        margin-bottom: 29px;
+    }
+
+    &__right {
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 6px;
+        background-color: $grey_middle;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: $grey;
+    }
+}
+
+.footer-block {
+    display: flex;
+    flex-direction: column;
+}
+
+@import "./media/corp-media/media-1400.scss";
+@import "./media/corp-media/media-1000.scss";
+@import "./media/corp-media/media-700.scss";
+@import "./media/corp-media/media-470.scss";
+@import './ui/ui-def.scss';

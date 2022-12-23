@@ -1,0 +1,159 @@
+@media (max-width: 700px) {
+    .container {
+        max-width: 420px;
+    }
+
+    .header {
+        &__info-list {
+            display: none;
+        }
+
+        &__container-3 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__search-wrapper {
+            margin-bottom: 22px;
+        }
+
+        &__input-search {
+            border-radius: 10px;
+        }
+
+        &__line-1::before {
+            display: none;
+        }
+
+        &__container-1 {
+            padding-top: 47px;
+        }
+
+        &__lk-button {
+            right: 55px;
+        }
+    }
+
+    .cart__swiper-slide {
+        width: 34%;
+        height: auto;
+    }
+
+    .main {
+        &__about {
+            background-image: url("../../../assets/images/schema-divan-320.webp");
+            grid-column: span 12;
+            background-position: bottom 15px left 0px;
+        }
+    
+        &__container {
+            grid-template-rows: minmax(116px, auto);
+        }
+    
+        &__map {
+            display: none;
+        }
+    
+        &__slider-head {
+            grid-column: span 12;
+        }
+    
+        &__buy-info {
+            grid-column: span 12;
+        }
+    }
+
+    .title {
+        font-size: 24px;
+        line-height: 100%;
+    }
+
+    .footer {
+        .footer__part-logo {
+            width: 100%;
+            margin: 0;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+    }
+
+    .footer-block:not(:first-child) {
+        margin: 0;
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    .footer-block:nth-child(n + 4) {
+        margin-bottom: 0;
+    }
+
+    .thanks {
+        width: 296px;
+        padding: 60px 51px;
+        font-size: 16px;
+        line-height: 100%;
+
+        &__logo {
+            margin-bottom: 14px;
+
+            svg {
+                width: 73px;
+                height: 50px;
+            }
+        }
+
+        &__text {
+            text-align: center;
+        }
+    }
+
+    .open-cart {
+        width: 420px;
+        padding: 32px 16px 16px 16px;
+
+        &__head-img {
+            img {
+                height: 165px;
+                max-width: 420px;
+                margin-bottom: 48px;
+            }
+        }
+
+        &__slide-img {
+            img {
+                max-height: 86px;
+            }
+        }
+
+        &__swiper {
+            width: 75%;
+        }
+
+        &__close {
+            width: 12px;
+            height: 12px;
+        }
+
+        &__prev,
+        &__next {
+            bottom: 50px;
+        }
+    }
+
+    .thanks {
+        &__close {
+            width: 12px;
+            height: 12px;
+        }
+    }
+
+    .buy-form {
+        width: 420px;
+        &__close {
+            width: 12px;
+            height: 12px;
+        }
+    }
+}

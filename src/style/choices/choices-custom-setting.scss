@@ -1,0 +1,234 @@
+
+
+.choices {
+    z-index: 100;
+}
+
+.header__line-1 {
+    .choices__list--dropdown .choices__item--selectable, .choices__list[aria-expanded] .choices__item--selectable {
+        padding-right: 0;
+    }
+
+    .choices[data-type*=select-one] .choices__inner {
+        padding-bottom: 0
+    }
+    
+    .choices {
+        margin-bottom: 0;
+        margin-right: 17px;
+    }
+
+    .choices__inner {
+        padding: 0 15px 0 0 ;
+        min-height: auto;
+        border:none;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        color: #A65CF0;
+        background-color: initial;
+    }
+
+    .choices__placeholder {
+         opacity: 1; 
+    }
+
+    .choices__list--dropdown, .choices__list[aria-expanded] {
+        background-color: #FFFFFF; 
+        border-radius: 10px;
+        border: 2px solid #F7F7F7;
+    }
+
+    .choices__list--dropdown .choices__item--selectable.is-highlighted, .choices__list[aria-expanded] .choices__item--selectable.is-highlighted {
+        background-color: initial; 
+    }
+
+    .choices[data-type*=select-one]::after {
+        content: "";
+        height: 8px;
+        width: 12px;
+        border: none;
+        background-image: url('../../assets/images/sel-strelka.svg');
+    }
+
+    .choices[data-type*=select-one].is-open::after {
+        transform: rotate(180deg);
+        margin-top: -2.5px;
+    }
+
+    .choices__inner {
+        transition: color .3s ease-in-out, background-color .3s ease-in-out;
+    }
+    
+    .choices__inner:hover {
+        background-color: none;
+        color:#C998FB;
+        transition: color .3s ease-in-out, background-color .3s ease-in-out;
+    }
+
+    .choices__inner:focus-visible {
+        background-color: #EBD1FF;
+        color: #7033AC;
+        transition: color .3s ease-in-out, background-color .3s ease-in-out;
+    }
+
+    .choices__inner:active {
+        color: #7033AC;
+        transition: border .3s ease-in-out, background-color .3s ease-in-out;
+    }
+    
+    .is-open .choices__inner {
+        color: #A65CF0;
+        transition: color .3s ease-in-out;
+    }
+}
+
+.header__line-3 {
+    .choices__placeholder {
+        opacity: 1;
+    }
+
+    .choices {
+        margin-right: 120px;
+        margin-bottom: 0; 
+    }
+
+    .choices__inner {
+        height: 100%;
+        padding: 16px 63px 16px 32px;
+        border: 2px solid #F7F7F7;
+        border-radius: 0px 10px 10px 0px;
+        font-size: 16px;
+        line-height: 22px;
+        color: #A65CF0;
+    }
+
+    .choices__list--dropdown .choices__item--selectable, .choices__list[aria-expanded] .choices__item--selectable {
+        padding-right: 0px;
+    }
+
+    .choices__list--single {
+         padding:0; 
+         width: 200px;
+    }
+
+    .choices[data-type*=select-one]::after {
+        content: "";
+        height: 0;
+        width: 0;
+        border: none;
+        position: absolute;
+        right: 11.5px;
+        top: 50%;
+        margin-top: -2.5px;
+        pointer-events: none;
+    }
+
+    .choices[data-type*=select-one]::after {
+        content: "";
+        height: 8px;
+        width: 12px;
+        border: none;
+        background-image: url('../../assets/images/sel-strelka.svg');
+    }
+
+    .choices[data-type*=select-one].is-open::after {
+        transform: rotate(180deg);
+        margin-top: -2.5px;
+    }
+
+    .choices__list--dropdown, .choices__list[aria-expanded] {
+        background-color: #FFFFFF; 
+        border-radius: 10px;
+        border: 2px solid #F7F7F7;
+    }
+
+    .choices__list--dropdown .choices__item--selectable.is-highlighted, .choices__list[aria-expanded] .choices__item--selectable.is-highlighted {
+        background-color: initial; 
+    }
+
+    .choices__list--dropdown .choices__item, .choices__list[aria-expanded] .choices__item {
+        padding-left: 32px;
+        padding-right: 10px;
+    }
+
+    .choices__list--dropdown, .choices__list[aria-expanded] {
+        margin-top: 2px;
+    }
+    
+    .choices__inner {
+        transition: border .3s ease-in-out;
+    }
+    
+    .choices__inner:hover {
+        border: 2px solid #A65CF0;
+        transition: border .3s ease-in-out;
+    }
+
+    .choices__inner:focus-visible {
+        background-color: #A65CF0;
+        border: 2px solid #A65CF0;
+        transition: border .3s ease-in-out, background-color .3s ease-in-out;
+    }
+    
+    .is-open .choices__inner {
+        border: 2px solid #7033AC;
+        transition: border .3s ease-in-out;
+    }
+}
+
+@media (max-width:1400px){
+
+    .header__line-3 .choices {
+        margin-right: 0;
+    }
+
+    .header__line-3 .choices__inner {
+        padding-top: 15px;
+        padding-left: 27px;
+        padding-right: 66px;
+    }
+
+    .header__line-3 .choices[data-type*=select-one]::after {
+        right: 29.5px;
+    }
+}
+
+@media (max-width:1000px){
+    .choices__inner:hover {
+        border: none;
+        transition: border .3s ease-in-out;
+    }
+
+    .header__line-3 {
+        .choices__list--single {
+            padding:0; 
+            width: 100%;
+       }
+    }
+}
+
+
+@media (max-width:700px){
+
+    .header__line-3 {
+        .choices__inner {
+            border-radius: 10px;
+        }
+    
+        .choices {
+            width: 100%;
+        }
+    }
+
+    .choices[data-type*=select-one] .choices__inner {
+        padding-bottom: 14.5px;
+    }
+}
+
+
+@media (max-width:460px){
+    .choices__inner {
+        width: 100%;
+    }
+}

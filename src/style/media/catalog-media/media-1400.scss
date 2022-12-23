@@ -1,0 +1,210 @@
+@media (max-width:1400px) {
+    .container {
+        max-width: 952px;
+    }
+
+    .header {
+
+        &__container-1 {
+            padding-top: 76px;
+        }
+
+        &__tel {
+            margin: 0;
+            position: absolute;
+            top: 24px;
+            right: 0;
+        }
+    
+        &__selector-city-wrapper {
+            margin: 0;
+            position: absolute;
+            top: 18px;
+            left: 0;
+        }
+
+        &__logo {
+            margin-right: 61px;
+        }
+
+        &__nav-item:not(:last-child) {
+            margin-right: 42px;
+        }
+
+        &__container-2 {
+            padding: 35px 0;
+        }
+
+        &__cart-wrapper{
+            margin: 0;
+            position: absolute;
+            top: -134px;
+            right: 0;
+        }
+
+        &__lk-button {
+            margin: 0;
+            position: absolute;
+            top: -132px;
+            right: 72px;
+        }
+
+        &__input-search {
+            width: 654px;
+        }
+
+        &__line-1 {
+            position: relative;
+        }
+
+        &__line-1::before {
+            position: absolute;
+            content: "";
+            left: 0;
+            height:58px;
+            right: 0;
+            background-color: $default;
+        }
+    }
+
+    .catalog {
+        &__wrapper {
+            grid-column: span 12;
+            padding-top: 24px;
+        }
+
+        &__category-item-btn {
+            display: block;
+            button {
+                color: $primary;
+            }
+        }
+
+        &__title {
+            margin-right: 17px;
+        }
+
+        &__filter-name, &__oxford {
+            display: none;
+        }
+
+        &__checked-filter {
+            display: block;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__filter-title {
+            position: relative;
+            padding: 9px 15px;
+            width: 100%;
+            background: $grey_middle;
+            border-radius: 10px;
+            margin: 0;
+        }
+
+        &__category-list {
+            border: 1px solid $grey_light;
+            width: 100%;
+            padding: 40px 13px 32px 30px;
+            li:not(.catalog__category-item-btn):nth-child(n+6) {
+                display: none;
+            }
+        }
+
+        &__filter {
+            grid-column: span 12;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__subtitle {
+            display: block;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 130%;
+            color: $black;
+        }
+
+        &__title-wrapper {
+            grid-column: span 12;
+        }
+    }
+
+    .wrapper-filter {
+        margin: 0;
+        position: relative;
+        width: 187px;
+        z-index: 10;
+    }
+
+    .wrapper-filter__content {
+        position: absolute;
+        background: $default;
+        left: 0;
+        top: 18px;
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    .wrapper-filter__inputs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top: 28px;
+        width: 100%;
+        border: 1px solid $grey_light;
+        padding: 30px 30px;
+    }
+
+    .wrapper-filter__begin {
+        margin-bottom: 10px;
+    }
+
+    .wrapper-filter__title::before {
+        content: "";
+        position: absolute;
+        top: 15px;
+        right: 5px;
+        background-image: url('../../../assets/images/sel-strelka.svg');
+        width: 13px;
+        height: 8px;
+    }
+
+    .filter-item-checked {
+        display: flex;
+        align-items: center;
+        padding: 3px 3px 3px 9px;
+        margin-right: 22px;
+        margin-bottom: 5px;
+    }
+
+    .footer {
+        &__part-logo {
+            margin-right: 30px;
+        }
+
+        &__part-about {
+            margin-right: 78px;
+        }
+
+        &__part-service {
+            margin-right: 94px;
+        }
+
+        &__part-feedback {
+            margin-right: 108px;
+        }
+
+        &__logo {
+            margin-bottom: 28px;
+        }
+    }
+
+    #slider-range {
+        display: none;
+    }
+
+    @import '../../ui/ui-catalog.scss';
+}
