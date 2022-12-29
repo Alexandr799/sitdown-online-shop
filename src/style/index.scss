@@ -3,9 +3,10 @@
 @import "./swiper/swiper-custom.scss";
 @import "./choices/choices.min.scss";
 @import "./choices/choices-custom-setting.scss";
-@import "./default/fonts.scss";
 @import "./default/def.scss";
+@import "./fonts.scss";
 @import "./default/var.scss";
+
 
 .header {
     &__line-1 {
@@ -139,6 +140,7 @@
 
 .swiper-slide {
     background-size: cover;
+    height: auto;
     background-position: center;
 }
 
@@ -163,6 +165,7 @@
 
     &__title {
         @include resetMarginPadding();
+        width: 44%;
         margin-bottom: 49px;
         max-width: 600px;
         font-weight: 700;
@@ -351,7 +354,7 @@
         border-radius: 10px;
     }
 
-    .catalog__img-wrapper {
+    &__img-wrapper {
         min-height: 125px;
         display: flex;
         align-items: flex-end;
@@ -637,6 +640,10 @@
         font-size: 14px;
         line-height: 19px;
         color: $grey-shade;
+    }
+
+    &__tooltip {
+        top:2px;
     }
 }
 

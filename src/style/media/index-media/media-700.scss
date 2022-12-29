@@ -26,6 +26,14 @@
             flex-wrap: wrap;
         }
 
+        &__nav-list-wrapper {
+            top: 130px;
+        }
+
+        &__nav-list {
+            max-width: 420px;
+        }
+
         &__search-wrapper {
             margin-bottom: 22px;
         }

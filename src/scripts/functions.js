@@ -50,7 +50,7 @@ export const autoSwiper = (
 };
 
 export const initBurger = () => {
-  const burgerMenu = document.querySelector(".header__nav-list");
+  const burgerMenu = document.querySelector(".header__nav-list-wrapper");
   const burger = document.querySelector(".burger");
 
   document.querySelector(".burger").addEventListener("click", (e) => {

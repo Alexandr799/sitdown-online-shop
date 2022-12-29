@@ -4,6 +4,7 @@
     }
 
     .header {
+
         &__line-1 {
             position: absolute;
             width: 100%;
@@ -14,7 +15,7 @@
         }
 
         &__selector-city-wrapper {
-            position: static;
+            position: static; 
             margin-bottom: 18px;
         }
 
@@ -43,6 +44,26 @@
             padding: 0;
             padding-bottom: 168px;
             padding-top: 12px;
+        }
+
+        &__nav-list-wrapper {
+            padding-top: 250px;
+            min-height: 100vh;
+            top: 0;
+        }
+    
+        &__nav-list {
+            width: 278px;
+            grid-template-columns: repeat(6, 1fr);
+            background-image: none;
+        }
+
+        &__nav-item {
+            grid-column: span 3;
+        }
+
+        &__nav-item:nth-child(2n) {
+            grid-column: span 3;
         }
     }
 
@@ -94,6 +115,10 @@
         &__about {
             padding-top: 23px;
             padding-bottom: 108px;
+        }
+
+        &__subtitle {
+            margin-bottom: 9px;
         }
     }
 
@@ -163,7 +188,7 @@
     .footer-block:not(:first-child) {
         margin: 0;
         width: 50%;
-        margin-bottom: 16px;
+        margin-bottom: 25px;
     }
 
     .footer-block:nth-child(n + 4) {

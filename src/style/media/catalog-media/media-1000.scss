@@ -8,6 +8,10 @@
             justify-content: center;
         }
 
+        &__container-3 {
+            padding-bottom: 28px;
+        }
+
         &__container-1 {
             padding-bottom: 16px;
         }
@@ -15,21 +19,30 @@
         &__info-item:not(:last-child) {
             margin-right: 35px;
         }
+
+        &__nav-list-wrapper {
+            position: fixed;
+            width: 100%;
+            padding-top: 100px;
+            min-height: 300px;
+            top: 100px;
+            left: 0;
+            transform:scaleX(0);
+            background-color: $default;
+            transform-origin: left;
+            z-index: 1000;
+        }
     
         &__nav-list {
-            position: fixed;
-            margin: 0;
-            flex-direction: column;
-            z-index: 1000;
+            width: 624px;
+            margin: 0 auto;
+            display: grid;
+            row-gap: 30px;
+            column-gap: 10px;
             align-items: center;
-            background-color: $default;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100vh;
-            padding: 200px 30px;
-            transform:scaleX(0);
-            transform-origin: left;
+            grid-template-columns: repeat(12, 1fr);
+            background-image: url('../../../assets/images/slon-burger.webp');
+            background-position: center right;
         }
 
         &__nav-item:not(:last-child) {
@@ -37,10 +50,18 @@
         }
 
         &__nav-item {
-            margin-bottom: 30px;
+            grid-column: span 3;
+        }
+
+        &__nav-item:nth-child(2n) {
+            grid-column: span 9;
+        }
+
+        &__nav-item {
+            margin-bottom: 0;
             font-weight: 400;
-            font-size: 25px;
-            line-height: 100%;
+            font-size: 16px;
+            line-height: 130%;
         }
 
         &__logo {

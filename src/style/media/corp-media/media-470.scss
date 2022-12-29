@@ -14,11 +14,6 @@
             background-color: inherit;
         }
 
-        &__input-search {
-            border-radius: 10px;
-        }
-    
-
         &__selector-city-wrapper {
             position: static; 
             margin-bottom: 18px;
@@ -49,6 +44,26 @@
             padding: 0;
             padding-bottom: 168px;
             padding-top: 12px;
+        }
+
+        &__nav-list-wrapper {
+            padding-top: 250px;
+            min-height: 100vh;
+            top: 0;
+        }
+    
+        &__nav-list {
+            width: 278px;
+            grid-template-columns: repeat(6, 1fr);
+            background-image: none;
+        }
+
+        &__nav-item {
+            grid-column: span 3;
+        }
+
+        &__nav-item:nth-child(2n) {
+            grid-column: span 3;
         }
     }
 
@@ -118,10 +133,10 @@
         margin-bottom: 20px;
     }
 
-    .footer-block:not(:first-child){
+    .footer-block:not(:first-child) {
         margin: 0;
         width: 50%;
-        margin-bottom: 16px;
+        margin-bottom: 25px;
     }
 
     .footer-block:nth-child(n+4){

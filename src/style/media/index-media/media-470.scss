@@ -45,6 +45,26 @@
             padding-bottom: 168px;
             padding-top: 12px;
         }
+
+        &__nav-list-wrapper {
+            padding-top: 250px;
+            min-height: 100vh;
+            top: 0;
+        }
+    
+        &__nav-list {
+            width: 278px;
+            grid-template-columns: repeat(6, 1fr);
+            background-image: none;
+        }
+
+        &__nav-item {
+            grid-column: span 3;
+        }
+
+        &__nav-item:nth-child(2n) {
+            grid-column: span 3;
+        }
     }
     
     .hero-slide__btn {
@@ -113,7 +133,7 @@
     .best {
 
         &__container {
-            padding-bottom: 147px
+            padding-bottom: 141px
         }
 
         &__list {
@@ -130,12 +150,12 @@
             left: 16px;
         }
 
-        .best__cart-item {
+        &__cart-item {
             padding: 40px 15px 15px 15px;
         }
 
-        .catalog__img-wrapper {
-            min-height: 53px;
+        &__img-wrapper {
+            min-height: 50px;
         }
 
         &__buy-btn {
@@ -156,6 +176,10 @@
             left: 50%;
             transform: translateX(-50%);
         }
+
+        // &__more-btn {
+        //     bottom: 76px;
+        // }
     }
 
     .oxford {
@@ -278,10 +302,10 @@
         margin-bottom: 20px;
     }
 
-    .footer-block:not(:first-child){
+    .footer-block:not(:first-child) {
         margin: 0;
         width: 50%;
-        margin-bottom: 16px;
+        margin-bottom: 25px;
     }
 
     .footer-block:nth-child(n+4){

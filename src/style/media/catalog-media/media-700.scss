@@ -8,17 +8,25 @@
             display: none;
         }
 
+        &__input-search {
+            border-radius: 10px;
+        }
+
         &__container-3 {
             display: flex;
             flex-wrap: wrap;
         }
 
-        &__search-wrapper {
-            margin-bottom: 22px;
+        &__nav-list-wrapper {
+            top: 130px;
         }
 
-        &__input-search {
-            border-radius: 10px;
+        &__nav-list {
+            max-width: 420px;
+        }
+
+        &__search-wrapper {
+            margin-bottom: 22px;
         }
 
         &__line-1::before {
