@@ -1,5 +1,6 @@
 const { src, dest, series, watch } = require("gulp");
 const htmlmin = require("gulp-htmlmin");
+const path = require('path')
 const autoprefixer = require("gulp-autoprefixer");
 const cleanCSS = require("gulp-clean-css");
 const image = require("gulp-image");
@@ -94,8 +95,10 @@ const htmlBuild = () => {
 const watchFiles = () => {
   browserSync.init({
     server: {
-      baseDir: "./dist",
+      baseDir: 'dist',
+      index:'index.html',
     },
+    port: 8080
   });
 };
 

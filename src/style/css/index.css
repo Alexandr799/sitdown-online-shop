@@ -2418,7 +2418,7 @@ li, ul {
 .footer__block-title {
   margin-bottom: 10px;
 }
-.footer__link:not(:last-child) {
+.footer__link-wrapper:not(:last-child) {
   margin-bottom: 10px;
 }
 .footer__logo {
